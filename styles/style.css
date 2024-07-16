@@ -170,8 +170,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
 }
-.features-image >img{
-    width: 100%;
+.features-image > img {
+  width: 100%;
 }
 .features-image > button {
   font-size: 4rem;
@@ -233,6 +233,56 @@ body {
   font-size: 1.25rem;
   font-weight: 600;
 }
+/* our-sponsors section */
+#our-sponsors {
+  max-width: 1280px;
+  min-height: 300px;
+  margin: 0 auto;
+}
+#our-sponsors .our-sponsors-content {
+  text-align: center;
+}
+#our-sponsors .our-sponsors-content > h3 {
+  color: rgb(19, 19, 19);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+#our-sponsors .our-sponsors-content > p {
+  color: rgb(114, 114, 114);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+.sponsor-companies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
+  gap: 120px;
+}
+.sponsor-companies img {
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  border: 1px dotted rgb(169, 167, 167);
+  filter: grayscale(100%);
+}
+footer {
+  max-width: 1280px;
+  min-height: 100px;
+  margin: 70px auto 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 244, 231);
+}
+footer p {
+  color: rgb(66, 66, 66);
+  font-size: 1.25rem;
+  margin: 0 auto;
+  font-weight: 400;
+}
 /* Responsive media queries */
 
 @media screen and (max-width: 576px) {
@@ -270,25 +320,51 @@ body {
     cursor: pointer;
   }
   #our-feature,
-  #some-facts {
+  #some-facts,
+  #our-sponsors,
+  .sponsor-companies {
     width: 80%;
     display: flex;
     flex-direction: column;
   }
-  #our-feature .our-feature-images ,.some-facts-items{
+
+  #some-facts,
+  #our-sponsors,
+  .sponsor-companies{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #our-feature .our-feature-images,
+  .some-facts-items {
     grid-template-columns: 1fr;
   }
+#our-feature .our-feature-images{
+    margin: 50px;
+}
   #our-feature .our-feature-content {
     width: 80%;
     text-align: center;
     margin: 50px auto;
   }
-  #features{
+  #features {
     width: 90%;
     flex-direction: column;
   }
-  .features-image > button{
-    margin:50px 0 0 30px;
+  .features-image > button {
+    margin: 50px 0 0 30px;
     padding: 2.8rem 2.5rem;
+  }
+  .sponsor-companies {
+    gap: 60px;
+  }
+  .sponsor-companies img {
+    width: 70%;
+  }
+  footer{
+    width: 100%;
+  }
+  footer > p{
+    font-size: 0.7rem;
   }
 }
