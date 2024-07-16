@@ -268,7 +268,7 @@ body {
   filter: grayscale(100%);
 }
 footer {
-  max-width: 1280px;
+  max-width: 1536px;
   min-height: 100px;
   margin: 70px auto 0;
   border-radius: 8px;
@@ -339,9 +339,9 @@ footer p {
   .some-facts-items {
     grid-template-columns: 1fr;
   }
-#our-feature .our-feature-images{
+/* #our-feature .our-feature-images{
     margin: 50px;
-}
+} */
   #our-feature .our-feature-content {
     width: 80%;
     text-align: center;
@@ -353,7 +353,6 @@ footer p {
   }
   .features-image > button {
     margin: 50px 0 0 30px;
-    padding: 2.8rem 2.5rem;
   }
   .sponsor-companies {
     gap: 60px;
