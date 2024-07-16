@@ -354,6 +354,7 @@ footer p {
   }
   .features-image > button {
     margin: 50px 0 0 30px;
+    font-size: 3rem;
   }
   .sponsor-companies {
     gap: 60px;
